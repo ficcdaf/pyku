@@ -50,13 +50,8 @@ def pretty_out(art, inp, art_max, inp_max):
     j = 0
     m = len(art)
     for i in art:
-        j += 1
         print(" " * art_pad, end="")
-        if j < m:
-            print(i)
-        else:
-            print(i, end="")
-            break
+        print(i)
     print("-" * winner)
     for i in inp:
         print(" " * inp_pad, end="")
